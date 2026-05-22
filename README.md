@@ -1,38 +1,228 @@
-# TrinetraAI - Live Fraud Intelligence System
+# <div align="center">TRINETRA AI</div>
 
-TrinetraAI is an advanced web application prototype demonstrating a conceptual AI-powered document forensics and underwriting intelligence system. It is designed to detect fraud, forged documents, and financial contradictions in real time.
+<div align="center">
+  <img src="./public/favicon.svg" alt="TrinetraAI Logo" width="120" />
+</div>
 
-## 🚀 Features
+<h3 align="center">Real-Time Underwriting Intelligence & Fraud Detection Platform</h3>
 
-- **Landing Page**: A beautiful, modern marketing page with a responsive hero section and 3D floating cards showing risk assessment mockups.
-- **Interactive "How It Works" Demo**: A full 4-stage pipeline visualization (Ingest, Analyze, Cross-Reference, Report) explaining the AI fraud detection process.
-- **Dynamic Theming**: Custom-built context for switching seamlessly between a sleek Dark Mode (default) and a crisp Light Mode, avoiding hardcoded colors.
-- **Global Workspace Navigation**: A robust internal dashboard layout featuring sidebar navigation, active case monitoring, and a highly detailed user profile modal.
-- **Evidence Locker & Document Forensics**: An immersive workspace view designed for fraud investigators. It features:
-  - An **Evidence Locker** sidebar with status tags, anomaly counts, document types, and upload dates.
-  - A dynamic **Center Panel** providing deep dives into OCR extraction confidence, detailed Metadata timeline anomalies, and interactive Pixel-Level Forgery Heatmaps.
-  - **Reasoning Cards** in the right panel offering AI-driven explanations for flagged risks and confidence scoring.
-- **Interactive Document Upload**: A stylized drop-zone modal simulating document processing, metadata extraction, and automatic routing to the forensics dashboard.
+---
+
+## 🌟 Overview
+
+**TRINETRA AI** is an AI-powered underwriting intelligence platform designed to help banks and financial institutions detect fraud, document tampering, financial inconsistencies, and synthetic identities in real time.
+
+Traditional verification systems focus on validating documents individually. TRINETRA AI introduces a next-generation approach by analyzing the entire financial identity ecosystem of an applicant through:
+
+- Cross-document intelligence
+- Behavioral anomaly detection
+- AI forensic analysis
+- Relationship graph intelligence
+- Explainable underwriting AI
+- Real-time monitoring
+
+The platform transforms underwriting from a manual verification process into an intelligent investigation workflow.
+
+---
+
+## 🚩 Problem Statement
+
+Modern financial institutions face increasing threats from:
+- AI-generated fake documents & forged salary slips
+- Manipulated bank statements & tampered land records
+- Synthetic identities & fake collateral documentation
+- Financial timeline inconsistencies & Organized fraud networks
+
+Current verification systems are manual, slow, fragmented, difficult to scale, and reactive instead of proactive. 
+
+**Banks need intelligent fraud detection, explainable AI, real-time anomaly detection, cross-document verification, and faster underwriting decisions.** 
+
+TRINETRA AI solves these challenges.
+
+---
+
+## 💡 Key Innovation
+
+Unlike traditional systems that only check whether a document is fake, TRINETRA AI asks:
+
+> **“Does the entire financial story make logical sense?”**
+
+The system reasons across salary slips, bank statements, GST records, land records, identity documents, behavioral patterns, metadata, and timelines to detect inconsistencies and fraud signals.
+
+---
+
+## 🛠️ Core Features
+
+### 1. Document Forensics Engine
+Advanced forensic analysis system for detecting document manipulation.
+- OCR extraction & Metadata inspection
+- PDF tampering & compression artifact analysis
+- Signature & Font inconsistency detection
+- AI-generated document fingerprinting
+
+### 2. Cross-Document Contradiction Engine
+The core intelligence layer of the platform detects income inconsistencies, timeline anomalies, ownership mismatches, and impossible transaction patterns.
+- *Example:* Declared Salary: ₹1,20,000/month | Detected Bank Inflow: ₹38,000 average ➡️ **Cross-document financial inconsistency detected.**
+
+### 3. AI Investigator
+An explainable AI co-pilot for analysts. Instead of only generating fraud scores, the AI explains why a case was flagged, provides supporting evidence, and recommends actions.
+- *Example Output:* “Salary growth increased by 240% within 2 months without matching GST turnover or bank inflow patterns.”
+
+### 4. Fraud Knowledge Graph
+Interactive graph intelligence engine that maps relationships between applicants, accounts, employers, phone numbers, IP addresses, and properties to detect fraud rings and hidden relationships.
+
+### 5. Real-Time Monitoring Center
+Live fraud intelligence dashboard featuring an anomaly stream, fraud heatmaps, active investigations, and a live AI risk pulse.
+
+### 6. Explainable Risk Scoring
+Transparent AI risk analysis detailing fraud probability, anomaly severity, evidence references, and confidence indicators.
+
+### 7. Compliance Intelligence
+Regulatory support system including RBI compliance checks, AML risk indicators, missing KYC detection, and underwriting policy verification.
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                    ┌────────────────────┐
+                    │ Document Uploads   │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │ OCR & Extraction   │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │ Forensics Engine   │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │ Contradiction AI   │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │ Risk Intelligence  │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │ AI Investigator    │
+                    └─────────┬──────────┘
+                              │
+                              ▼
+                    ┌────────────────────┐
+                    │ Analyst Dashboard  │
+                    └────────────────────┘
+```
+
+---
 
 ## 💻 Tech Stack
 
-- **React (Vite)**: Fast frontend tooling and component-based architecture.
-- **React Router DOM**: Client-side routing between the marketing pages and internal workspace.
-- **Framer Motion**: Used extensively for micro-interactions, page transitions, interactive 3D card swapping, and layout animations.
-- **Lucide React**: Clean, consistent SVG iconography.
-- **Vanilla CSS & Inline Styles**: Customized design token system utilizing a ThemeProvider without the overhead of heavy CSS frameworks.
+### Frontend
+- React.js, Vite, Tailwind CSS
+- Framer Motion, Recharts, React Flow
+- TypeScript
 
-## 🛠️ Getting Started
+### Backend
+- FastAPI, Node.js, Express.js
 
-### Prerequisites
+### AI / ML
+- Python, PyTorch, Scikit-learn
+- Isolation Forest, Autoencoders, Sentence Transformers, LayoutLMv3
 
-Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+### OCR & Forensics
+- PaddleOCR, OpenCV, Tesseract OCR, PDF metadata analysis
+
+### Database
+- PostgreSQL, MongoDB, Neo4j (Fraud Graph)
+
+### AI Agent Framework
+- LangChain, CrewAI, OpenAI API / Gemini API
+
+---
+
+## 🎨 UI/UX Philosophy
+
+The platform is designed as an **“AI Investigation Workspace”** instead of a traditional dashboard.
+
+**Design Goals:** Trustworthy, Explainable, Minimal, Human-centric, Enterprise-ready, and Investigation-focused.
+
+### Major Modules
+1. **Intelligence Hub:** Mission control dashboard with live fraud pulse.
+2. **Investigation Workspace:** Interactive forensic analysis environment.
+3. **Contradiction Engine:** Cross-document financial consistency analysis.
+4. **Fraud Graph Explorer:** Relationship intelligence visualization.
+5. **Monitoring Center:** Real-time fraud monitoring.
+6. **AI Investigator:** Human + AI collaborative investigation.
+7. **Reporting Center:** Executive-level underwriting reports.
+
+---
+
+## 🔄 Workflow
+
+1. **Upload**: User uploads salary slips, bank statements, land records, identity docs.
+2. **Extract**: OCR and metadata extraction begin automatically.
+3. **Analyze**: Forensic AI analyzes tampering, edits, metadata inconsistencies.
+4. **Cross-Reference**: Cross-document intelligence compares financial claims and timelines.
+5. **Score**: Anomaly detection models generate fraud scores and alerts.
+6. **Explain**: AI Investigator explains findings with supporting evidence.
+7. **Report**: Analysts review cases and generate reports.
+
+---
+
+## 🎯 Real-World Use Cases
+
+- **Loan Underwriting**: Detect forged income and collateral documents.
+- **Land Verification**: Identify manipulated ownership records.
+- **KYC Validation**: Detect synthetic identities and fake submissions.
+- **SME Lending**: Verify GST and business legitimacy.
+- **Insurance Fraud**: Analyze claim inconsistencies and forged evidence.
+
+---
+
+## ⚡ Why TRINETRA AI Is Different
+
+| Traditional Systems | TRINETRA AI |
+| :--- | :--- |
+| Static verification | Intelligent reasoning |
+| Single document checks | Cross-document intelligence |
+| Black-box AI | Explainable AI |
+| Manual review | AI-assisted investigations |
+| Reactive fraud detection | Real-time anomaly detection |
+| Isolated analysis | Relationship intelligence |
+
+---
+
+## 📈 Scalability & Future Scope
+
+The architecture is designed for microservices, distributed AI pipelines, and enterprise deployment. Potential integrations include DigiLocker, CKYC, GST APIs, and Core banking systems.
+
+**Future Scope:**
+- Deepfake KYC video detection
+- Federated fraud intelligence
+- Adaptive fraud learning
+- Blockchain-backed audit trails
+
+---
+
+## 🔒 Security & Privacy
+
+TRINETRA AI prioritizes encrypted document handling, secure AI processing, privacy-preserving analytics, role-based access control, and audit logging.
+
+---
+
+## 💻 Getting Started (Local Development)
 
 ### Installation
-
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Raja-89/TrinetraAI.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -47,28 +237,20 @@ Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
    npm run dev
    ```
 
-The application should now be running locally. Check your terminal for the exact localhost URL (usually `http://localhost:5173`).
+---
 
-## 🎨 Design System
+## 🏆 Project Status & Contributors
 
-TrinetraAI implements a custom, fully reactive design token system via `ThemeContext.tsx`. 
-- **Dark Mode**: High-contrast dark backgrounds (`#06080F`), deep indigo accents (`#5227FF`), and subtle gradients designed to look like high-end cybersecurity software.
-- **Light Mode**: Ultra-clean white surfaces with soft gray borders and highly readable typography for extended investigative work.
+**Built for the SuRaksha Hackathon under the theme:**
+### Real-Time Anomaly Detection
 
-### Core Brand Colors
-- **Accent**: Indigo (`#5227FF`)
-- **Alert / High Risk**: Crimson Red (`#E85D75`)
-- **Verified / Normal**: Emerald Green (`#2FBF71`)
-- **Warning / Suspicious**: Amber (`#F59E0B`)
-- **Info / Identity**: Teal (`#00B3A4`)
+**Focused on:**
+- Banking security
+- Intelligent underwriting
+- Explainable AI
+- Fraud prevention
+- Financial trust systems
 
-## 📁 Project Structure
+*Current Development Stage:* UI/UX Design, AI Architecture Planning, Fraud Intelligence Engine Development, and Investigation Workflow Prototyping.
 
-- `src/app/context/`: Contains global state providers (`ThemeContext`, `DocumentContext`).
-- `src/app/pages/`: Main route views (`LandingPage`, `HowItWorksPage`, Workspace features).
-- `src/app/components/`: Reusable UI components (`Navbar`, `Footer`, `Hero`, `CardSwap`).
-- `public/`: Static assets including the custom SVG favicon.
-
-## 🤝 Contributing
-
-This project is a conceptual prototype. Feel free to fork it, modify the UI components, or hook it up to a real backend AI pipeline!
+> **Team Vision:** We envision a future where AI assists analysts instead of replacing them, underwriting becomes intelligent and explainable, and financial trust becomes scalable. TRINETRA AI is built to become the next-generation intelligence layer for digital banking systems.
